@@ -1,0 +1,67 @@
+.header {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: rem(44);
+        height: rem(44);
+        background-color: $color-bg3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero {
+        padding: rem(55) rem(15);
+        @include desktop {
+            padding: rem(15);
+        }
+
+        &__content {
+            max-width: rem(700);
+            margin: 0 auto;
+        }
+
+        &__title {
+            @include heroTitle(rem(42), rem(55), white);
+            @include tablet {
+                @include heroTitle(rem(80), rem(106), white);
+            }
+            @include desktop {
+                @include heroTitle(rem(100), rem(132), white);
+            }
+        }
+    
+        &__subtitle {
+            @include heroSubtitle(rem(16), rem(20), white);
+            margin: rem(10) 0 rem(30);
+            @include tablet {
+                @include heroSubtitle(rem(24), rem(30), white);
+            }
+        }
+
+        &__scroll-down {
+            margin: 0 auto;
+        }
+
+        &__image {
+            height: 100%;
+            width: auto;
+            @include absoluteCentered();
+            z-index: -5;
+            @media (min-width: 1000px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+}
