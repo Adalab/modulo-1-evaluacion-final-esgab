@@ -1,6 +1,8 @@
 // Core
 @import 'core/reset';
 @import 'core/variables';
+@import 'core/functions';
+@import 'core/mixins';
 
 // Layout
 @import 'layout/header';
@@ -8,7 +10,9 @@
 @import 'layout/page';
 
 // Components
+@import 'components/buttons';
 @import 'components/links';
 
 // Pages
 @import 'pages/index';
+

@@ -1,0 +1,50 @@
+@mixin mainTitle() {
+    font-family: 'Roboto Slab', serif;
+    font-size: rem(100);
+    line-height: rem(130);
+    color: white;
+    text-align: center;
+}
+
+@mixin secondaryTitle() {
+    font-family: 'Roboto Slab', serif;
+    font-size: rem(30);
+    line-height: rem(40);
+    color: black;
+}
+
+@mixin paragraph() {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(20);
+    line-height: rem(30);
+    font-weight: 400;
+    color: $color-text;
+}
+
+@mixin buttonText() {
+    font-family: 'Roboto', sans-serif;
+    font-size: rem(45);
+    line-height: rem(55);
+    font-weight: 500;
+    text-align: center;
+    color: $color-accent;
+}
+
+@mixin absoluteCentered() {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
