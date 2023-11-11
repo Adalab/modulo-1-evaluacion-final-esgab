@@ -8,3 +8,17 @@
     justify-content: center;
     align-items: center;
 }
+
+.button-outline {
+    @include buttonContent($color-accent, white);
+    &:hover {
+        @include buttonContent(white, $color-accent);
+    }
+}
+
+.button-filled {
+    @include buttonContent(white, $color-accent);
+    &:hover {
+        @include buttonContent($color-accent, white, );
+    }
+}

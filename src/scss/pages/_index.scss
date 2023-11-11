@@ -1,0 +1,90 @@
+.main {
+    .blog-preview {
+        padding: rem(30) rem(15) rem(45);
+        @include tablet {
+            padding: rem(30) rem(40) rem(45);
+        }
+        @include desktop {
+            padding: rem(60) rem(40) rem(60);
+        }
+
+        &__article {
+            max-width: rem(800);
+            margin: 0 auto;
+        }
+
+        &__category {
+            @include paragraph(rem(14), rem(30), $color-text-light);
+            margin-bottom: rem(5);
+        }
+
+        &__title {
+            @include regularTitle(rem(24), rem(30), black);
+            margin-bottom: rem(10);
+            @include tablet {
+                @include regularTitle(rem(26), rem(45), black);
+            }
+        }
+
+        &__summary {
+            @include paragraph(rem(18), rem(30), $color-text);
+            margin-bottom: rem(30);
+            @include tablet {
+                @include paragraph(rem(20), rem(30), $color-text);
+            }
+        }
+    }
+    
+    .reasons {
+        padding: rem(30) rem(15) rem(60);
+        background-color: $color-bg2;
+        text-align: center;
+        @include tablet {
+            padding: rem(30) rem(40) rem(60);
+        }
+        @include desktop {
+            padding: rem(60) rem(150) rem(60);
+        }
+    
+        &__main-title {
+            @include regularTitle(rem(24), rem(30), black);
+            text-align: center;
+            @include tablet {
+                @include regularTitle(rem(32), rem(45), black);
+            }
+        }
+
+        &__articles {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            padding: rem(50) 0 rem(60);
+            @include tablet {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr;
+                gap: rem(50);
+            }
+            @include desktop {
+                gap: rem(100);
+            }
+        }
+
+        &__title {
+            @include regularTitle(rem(18), rem(30), black);
+            text-align: center;
+            @include tablet {
+                @include regularTitle(rem(24), rem(30), black);
+                margin-bottom: rem(10);
+            }
+        }
+
+        &__text {
+            @include paragraph(rem(18), rem(30),black);
+            text-align: center; 
+            @include tablet {
+                @include paragraph(rem(20), rem(30),black);
+            }
+        }
+    }
+
+}

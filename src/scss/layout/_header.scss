@@ -8,15 +8,18 @@
     align-items: center;
 
     .menu {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        width: rem(44);
-        height: rem(44);
-        background-color: $color-bg3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        &__link {        
+            width: rem(44);
+            height: rem(44);
+            background-color: $color-bg3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
     
     .hero {

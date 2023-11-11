@@ -1,0 +1,65 @@
+.footer {
+    position: relative;
+    background-color: $color-bg1;
+
+    &__scroll-up {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+
+    &__content {
+        padding: rem(40) rem(15);
+        @include tablet {
+            display: flex;
+        }
+        @include desktop {
+            width: rem(700);
+            margin: 0 auto;
+        }
+    }
+
+    &__links { 
+        text-align: center;
+        text-transform: uppercase;
+        @include tablet {
+            display: flex;
+            width: 66.666%;
+            text-align: left;
+            order: 2;
+        }
+    }
+
+    &__list {
+        padding: rem(20);
+        @include tablet {
+            width: 50%;
+        }
+    }
+
+    &__anchor {
+        @include paragraph(rem(16), rem(30), white);
+        text-decoration: none;
+    }
+
+    &__copy {
+        @include paragraph(rem(14), rem(30), white);
+        text-align: center;
+        padding: rem(20);
+        @include tablet {
+            width: 33.333%;
+            text-align: left;
+            order: 1;
+        }
+    }
+
+    &__copy-year {
+        display: block;
+    }
+
+    .fa-heart {
+        color: $color-accent;
+        width: rem(15);
+    }
+}
