@@ -1,33 +1,43 @@
-@mixin mainTitle() {
+@mixin heroTitle($fontSize, $lineHeight, $textColor) {
     font-family: 'Roboto Slab', serif;
-    font-size: rem(100);
-    line-height: rem(130);
-    color: white;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;
     text-align: center;
+    text-transform: uppercase;
 }
 
-@mixin secondaryTitle() {
-    font-family: 'Roboto Slab', serif;
-    font-size: rem(30);
-    line-height: rem(40);
-    color: black;
-}
-
-@mixin paragraph() {
+@mixin heroSubtitle($fontSize, $lineHeight, $textColor) {
     font-family: 'Roboto', sans-serif;
-    font-size: rem(20);
-    line-height: rem(30);
     font-weight: 400;
-    color: $color-text;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;
+    text-align: center;
 }
 
-@mixin buttonText() {
+@mixin regularTitle($fontSize, $lineHeight, $textColor) {
+    font-family: 'Roboto Slab', serif;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;;
+}
+
+@mixin paragraph($fontSize, $lineHeight, $textColor) {
     font-family: 'Roboto', sans-serif;
-    font-size: rem(45);
-    line-height: rem(55);
+    font-weight: 400;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;;
+}
+
+@mixin buttonText($textColor) {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(45);
     text-align: center;
-    color: $color-accent;
+    color: $textColor;
 }
 
 @mixin absoluteCentered() {
