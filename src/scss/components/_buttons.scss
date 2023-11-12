@@ -10,6 +10,7 @@
     padding: rem(10) rem(25);
     color: white;
     background-color: $color-accent;
+    transition: all .5s ease;
     @include desktop {
         padding: rem(10) rem(60);
     }
