@@ -38,7 +38,7 @@
         }
     }
 
-    &__anchor {
+    &__link {
         @include paragraph(rem(16), rem(30), white);
         text-decoration: none;
     }

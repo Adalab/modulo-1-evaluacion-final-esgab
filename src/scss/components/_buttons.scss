@@ -1,3 +1,36 @@
+.button-primary {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: rem(45);
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid $color-accent;
+    border-radius: rem(30);
+    padding: rem(10) rem(25);
+    color: white;
+    background-color: $color-accent;
+
+    @include desktop {
+        padding: rem(10) rem(60);
+    }
+
+    &:hover {
+        color: $color-accent;
+        background-color: white;
+    }
+
+    &--outline {
+        @extend .button-primary;
+        color: $color-accent;
+        background-color: white;
+        &:hover {
+            color: white;
+            background-color: $color-accent;
+        }
+    }
+}
+
 .button-scroll {
     display: block;
     width: rem(45);
@@ -7,18 +40,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.button-outline {
-    @include buttonContent($color-accent, white);
-    &:hover {
-        @include buttonContent(white, $color-accent);
-    }
-}
-
-.button-filled {
-    @include buttonContent(white, $color-accent);
-    &:hover {
-        @include buttonContent($color-accent, white, );
-    }
 }

@@ -20,7 +20,7 @@
     
     .hero {
         height: 100%;
-        padding: rem(55) rem(15);
+        padding: rem(80) rem(15);
         @include backImage(cover);
         display: flex;
         flex-direction: column;
