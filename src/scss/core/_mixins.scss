@@ -39,6 +39,12 @@
     background-position: center;
 }
 
+@mixin back() {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @mixin absoluteCentered() {
     position: absolute;
     left: 50%;

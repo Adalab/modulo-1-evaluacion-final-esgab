@@ -10,11 +10,9 @@
     padding: rem(10) rem(25);
     color: white;
     background-color: $color-accent;
-
     @include desktop {
         padding: rem(10) rem(60);
     }
-
     &:hover {
         color: $color-accent;
         background-color: white;
@@ -31,13 +29,38 @@
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 .button-scroll {
     display: block;
-    width: rem(45);
-    height: rem(45);
+    width: rem(50);
+    height: rem(50);
     background-color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__image-down {
+        width: rem(25);
+        padding-top: rem(3);
+    }
+
+    &--bouncy {
+        @extend .button-scroll;
+        animation: bounce 2s infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }

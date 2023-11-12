@@ -6,7 +6,12 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        transition: all .5s ease;
+        &:hover {
+            transform: translate(-50%, -60%);
+        }
     }
 
     &__content {
@@ -41,6 +46,10 @@
     &__link {
         @include paragraph(rem(16), rem(30), white);
         text-decoration: none;
+        transition: .5s;
+        &:hover {
+            color: $color-accent;
+        }
     }
 
     &__copy {
