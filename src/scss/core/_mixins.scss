@@ -45,6 +45,14 @@
     padding: rem(10) rem(70);
 }
 
+//for jpg
+@mixin backImage($imgName) {
+    background-image: url("../images/#{$imgName}.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 @mixin absoluteCentered() {
     position: absolute;
     left: 50%;

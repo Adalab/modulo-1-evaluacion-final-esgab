@@ -1,3 +1,1 @@
-# Ejercicio de evaluación final del modulo 1
-
-Descripción del ejercicio
+# Ejercicio de evaluación final del modulo
