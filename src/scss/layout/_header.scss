@@ -32,16 +32,16 @@
         justify-content: flex-end;
         align-items: center;
         @media (min-width: 768px) and (orientation: landscape) {
-            padding: 0 rem(15) 25vh;
+            padding: 0 rem(40) 25vh;
         } 
         @media (min-width: 768px) and (orientation: portrait) {
-            padding: 10vh rem(15);
+            padding: 10vh rem(40);
         }
         @media (min-width: 900px) {
-            padding: rem(50) rem(15);
+            padding: rem(40);
         } 
         @include desktop {
-            padding: rem(15);
+            padding: rem(40) rem(40) rem(20);
         }
 
         &__content {

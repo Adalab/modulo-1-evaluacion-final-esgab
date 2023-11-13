@@ -15,11 +15,13 @@
     }
 
     &__content {
-        padding: rem(40) rem(15);
+        padding: rem(15);
         @include tablet {
             display: flex;
+            padding: rem(40);
         }
         @include desktop {
+            padding: rem(55) rem(40);
             width: rem(700);
             margin: 0 auto;
         }
@@ -37,7 +39,6 @@
     }
 
     &__list {
-        padding: rem(20);
         @include tablet {
             width: 50%;
         }
@@ -55,7 +56,6 @@
     &__copy {
         @include paragraph(rem(14), rem(30), white);
         text-align: center;
-        padding: rem(20);
         @include tablet {
             width: 33.333%;
             text-align: left;

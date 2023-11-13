@@ -2,7 +2,7 @@
     .blog-preview {
         padding: rem(30) rem(15) rem(45);
         @include tablet {
-            padding: rem(30) rem(40) rem(45);
+            padding: rem(40);
         }
         @include desktop {
             padding: rem(60) rem(40) rem(60);
@@ -40,10 +40,10 @@
         background-color: $color-bg2;
         text-align: center;
         @include tablet {
-            padding: rem(30) rem(40) rem(60);
+            padding: rem(40) rem(40) rem(70);
         }
         @include desktop {
-            padding: rem(60) rem(150) rem(60);
+            padding: rem(60);
         }
     
         &__main-title {
@@ -63,9 +63,11 @@
             @include tablet {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr;
+                padding: rem(50) 0;
             }
             @include desktop {
-                gap: rem(100);
+                width: rem(1100);
+                margin: 0 auto;
             }
         }
 
