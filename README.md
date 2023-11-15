@@ -1,6 +1,6 @@
-# Ejercicio de Evaluación Final del modulo 1: HTML Y CSS
+# Ejercicio de Evaluación Final del modulo 1
 
-En este ejercicio se evalúan los conocimientos que hemos adquirido a través del módulo 1 del Bootcamp de Desarrollo Web de [Adalab](https://adalab.es). Para ello había que maquetar una página web con un diseño predeterminado que además se tenía que adaptar a los diferentes dispositivos de forma responsive.
+En este ejercicio se evalúan los conocimientos que hemos adquirido a través del módulo 1 del Bootcamp de Programación Web de [Adalab](https://adalab.es). Para ello había que maquetar una página web con un diseño predeterminado que además se tenía que adaptar a los diferentes dispositivos de forma responsive.
 
 El ejercicio está integrado en la plantilla de proyecto Starter Kit ofrecida por Adalab y creada en **node y vite**.
 
@@ -11,8 +11,8 @@ El ejercicio está integrado en la plantilla de proyecto Starter Kit ofrecida po
 - Sass
 - Flexbox y CSS Grid.
 - Media queries
-- Transiciones con CSS
-- Animación con CSS
+- Transiciones CSS
+- Animación CSS
 
 ### Link de Github Pages
 
