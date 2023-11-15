@@ -1,53 +1,53 @@
-# Ejercicio de Evaluación Final del modulo 1
+# Final Module 1 Evaluation Exercise
 
-En este ejercicio se evalúan los conocimientos que hemos adquirido a través del módulo 1 del Bootcamp de Programación Web de [Adalab](https://adalab.es). Para ello había que maquetar una página web con un diseño predeterminado que además se tenía que adaptar a los diferentes dispositivos de forma responsive.
+This exercise assesses the knowledge we have gained throughout Module 1 of the Web Development Bootcamp at [Adalab](https://adalab.es). To complete it, we had to structure a web page with a predetermined design that also had to be responsive to different devices.
 
-El ejercicio está integrado en la plantilla de proyecto Starter Kit ofrecida por Adalab y creada en **node y vite**.
+The exercise is integrated into the Starter Kit project template provided by Adalab and created in **node and vite**.
 
-¿Qué uso en el ejercicio?
+What did I use in the exercise?
 
 - HTML
-- Nomenclatura BEM
+- BEM Naming Convention
 - Sass
-- Flexbox y CSS Grid.
+- Flexbox and CSS Grid
 - Media queries
-- Transiciones CSS
-- Animación CSS
+- CSS Transitions
+- CSS Animation
 
-### Link de Github Pages
+### Github Pages Link
 
 https://beta.adalab.es/modulo-1-evaluacion-final-esgab/
 
-## Guía rápida de inicio 🚀
+## Quick Start Guide 🚀
 
-Estas instrucciones te permitirán obtener una copia del ejercicio y ejecutarlo.
+These instructions will allow you to get a copy of the exercise and run it.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/)
+> **NOTE:** You need to have [Node JS](https://nodejs.org/) installed.
 
-### Instalación y ejecución 🔧
+### Installation and Execution 🔧
 
-_Ejecuta los siguientes comandos en la terminal_
+_Run the following commands in the terminal_
 
-1. **Clona el repositorio**:
+1. **Clone the repository**:
 
 ```bash
  git clone https://github.com/Adalab/modulo-1-evaluacion-final-esgab.git
 ```
 
-2. Instala las **dependencias locales**:
+2. Install **local dependencies**:
 
 ```bash
 npm install
 ```
 
-3. **Arranca el proyecto**:
+3. **Start the project**:
 
 ```bash
 npm run dev
 ```
 
-&nbsp; &nbsp; &nbsp; Este comando **abre una ventana del navegador y muestra la página web**
+&nbsp; &nbsp; &nbsp; This command **opens a browser window and displays the web page**.
 
-## Autores ✒️
+## Authors ✒️
 
 [Esther García](https://www.github.com/esgab)
